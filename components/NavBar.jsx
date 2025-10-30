@@ -1,6 +1,6 @@
 import Button from "./Button";
 
-export default function NavBar() {
+export default function NavBar({ onClick }) {
   return (
     <div>
       <span>Logo</span>
@@ -8,7 +8,7 @@ export default function NavBar() {
         <li>Home</li>
         <li>Contact</li>
       </ul>
-      <Button />
+      <Button onClick={onClick} text={"click"} />
     </div>
   );
 }
