@@ -1,10 +1,7 @@
-export default function Button({ text, onClick }) {
-  const handleClick = () => {
-    console.log("click");
-  };
+export default function Button({ children, onSmash }) {
   return (
-    <button onClick={handleClick} className="p-2 bg-lime-200">
-      {text}
+    <button onClick={onSmash} className="p-2 bg-lime-200">
+      {children}
     </button>
   );
 }
