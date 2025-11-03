@@ -12,7 +12,7 @@ export default function Bcom({ changeNumber, handleClick }) {
 
       <button
         className="p-2 bg-amber-500"
-        onMouseOver={() => console.log("over")}
+        // onMouseOver={() => console.log("over")}
       >
         Button
       </button>

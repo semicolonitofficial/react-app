@@ -3,6 +3,7 @@ import Acom from "../components/Acom";
 import Banner from "../components/Banner";
 import Bcom from "../components/Bcom";
 import NavBar from "../components/NavBar";
+import LoginPage from "./LoginPage";
 
 export default function HomePage() {
   const [isNumber, setIsNumber] = useState(0);
@@ -16,6 +17,8 @@ export default function HomePage() {
       <Banner /> */}
       <Acom changeNumber={isNumber} />
       <Bcom changeNumber={isNumber} handleClick={handleClick} />
+
+      <LoginPage />
     </div>
   );
 }
